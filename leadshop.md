@@ -6,7 +6,6 @@ There is an RCE vulnerability in qmpaas/leadshop (https://github.com/qmpaas/lead
 The vulnerability is in the leadshop/web/leadshop.php[27-61] file  
 
 ```
-
  public function run()
     {
         //读取参数数据
