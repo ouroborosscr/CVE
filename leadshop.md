@@ -65,7 +65,7 @@ DNSLog picture:
 http://example.org/?include=ToMkdir&meta=orobos.php&data=1
 ```
 file picture:
-![img](tomkdir.png)
+![img](tomkdir.PNG)
 
 -
 Impact
