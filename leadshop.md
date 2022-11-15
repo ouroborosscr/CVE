@@ -62,7 +62,7 @@ DNSLog picture:
 ![img](DNSLog.png)
 
 ```
-http://example.org/?include=ToMkdir&meta=orobos.php&data=1
+http://example.org/leadshop.php?include=ToMkdir&meta=orobos.php&data=1
 ```
 file picture:  
 ![img](tomkdir.PNG)
