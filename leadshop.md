@@ -5,7 +5,7 @@ Description
 There is an RCE vulnerability in qmpaas/leadshop (https://github.com/qmpaas/leadshop) (v1.4.15). An attacker can access the file leadshop.php and call any existing function through GET to control the target host.  
 The vulnerability is in the leadshop/web/leadshop.php[27-61] file  
 （https://github.com/qmpaas/leadshop/blob/42de4233357671b96b18f8c8b2f1d7a74a809755/web/leadshop.php#L27 ）
-```  
+  ```shell script
  public function run()  
     {  
         $include = isset($_GET['include']) ? $_GET['include'] : "";  
